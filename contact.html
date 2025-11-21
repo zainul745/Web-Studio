@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Web Studio</title>
+    <meta name="description" content="Contact Web Studio for quotes and SEO training." />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Web Studio</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="web-development.html" class="nav-link">Web Development</a>
+                <a href="seo-services.html" class="nav-link">SEO Services</a>
+                <a href="digital-marketing.html" class="nav-link">Digital Marketing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="cta">Contact</a>
+            </nav>
+            <button id="navToggle6" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Send a message to start your project or request SEO training.</p>
+        </section>
+
+        <section class="contact-grid">
+
+            <!-- UPDATED FORM (FORMSPREE) -->
+            <form class="contact-form" id="contactForm" 
+                  action="https://formspree.io/f/xpwallwk" 
+                  method="POST">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+
+            <aside class="contact-details">
+                <div class="card">
+                    <h4>Visit or Message</h4>
+                    <p>Karachi, Pakistan</p>
+                    <p>Phone: +92 300 0000000</p>
+                    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <h3>Web Studio</h3>
+                <p>Web Development • SEO • Digital Marketing</p>
+            </div>
+        </div>
+        <div class="copyright">© <span id="year6"></span> Web Studio. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
